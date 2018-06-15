@@ -7,6 +7,11 @@ This repository is contains of :
 - Java MongoDB various queries case example.
 
 
+## Prerequisites
+
+- Java JDK8
+- [MongoDB 3](https://docs.mongodb.com/manual/installation/)
+
 
 ## Related Reference
 

@@ -1,5 +1,5 @@
 
-package com.mkdika.mongocrud;
+package com.mkdika.mongocrud.create;
 
 import com.mkdika.mongocrud.helper.JsonHelper;
 import com.mongodb.MongoClient;
@@ -12,7 +12,7 @@ import org.bson.Document;
  *
  * @author Maikel Chandika (mkdika@gmail.com)
  */
-public class InsertTest {
+public class InsertOneTest {
     
     public static void main(String[] args) throws IOException {
         MongoClient client = new MongoClient();
@@ -24,13 +24,14 @@ public class InsertTest {
         Document person = new Document("name","Maikel Chandika")
                                 .append("age", 30)
                                 .append("profession", "Software Engineer");
-        System.out.println("Before insert:");
+        
+        System.out.println("Before insert:"); // there is not _id field
         JsonHelper.print(person.toJson());
         
         System.out.println();
         coll.insertOne(person);
         
-        System.out.println("After insert:");
+        System.out.println("After insert:"); // there is _id field
         JsonHelper.print(person.toJson());
         
       
