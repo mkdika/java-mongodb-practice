@@ -1,4 +1,4 @@
-package com.mkdika.mongocrud;
+package com.mkdika.mongocrud.read;
 
 import com.mkdika.mongocrud.helper.JsonHelper;
 import com.mongodb.MongoClient;
