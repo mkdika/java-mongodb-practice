@@ -1,14 +1,9 @@
 package com.mkdika.mongocrud;
 
-import com.mkdika.mongocrud.helper.JsonHelper;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
-import static com.mongodb.client.model.Filters.gt;
-import static com.mongodb.client.model.Filters.lt;
-import static com.mongodb.client.model.Filters.or;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
